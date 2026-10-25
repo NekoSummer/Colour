@@ -61,13 +61,11 @@ public class ColourCommand extends PluginListener{
                     player.sendMessage(Colour.YELLOW + "Yellow");
                 } else if (split[1].equalsIgnoreCase("white")) {
                     player.sendMessage(Colour.WHITE + "White");
+                } else if (split[1].equalsIgnoreCase("com.nexon.bluearchive")) {
+                    player.sendMessage(Colour.AQUA + "Blue" + Colour.WHITE + "Archive");
                 } else {
                     commandHelp(player);
                 }
-                return true;
-            }
-            if (split[1].equalsIgnoreCase("com.nexon.bluearchive")) {
-                player.sendMessage(Colour.AQUA + "Blue" + Colour.WHITE + "Archive");
                 return true;
             }
         }
