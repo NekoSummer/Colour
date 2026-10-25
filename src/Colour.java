@@ -1,5 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Logger;
 
 public class Colour extends Plugin {
@@ -59,4 +57,9 @@ public class Colour extends Plugin {
         Logger.getLogger("Minecraft").info("Colour extra plugin is disabled");
     }
 
+    @Override
+    public void initialize() {
+        PluginLoader loader = etc.getLoader();
+        loader.addListener(PluginLoader.Hook.COMMAND, new ColourCommand(), this, PluginListener.Priority.MEDIUM);
+    }
 }
