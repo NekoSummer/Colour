@@ -1,0 +1,7 @@
+# Fuck IDEs
+.idea/*
+.vscode/
+*.iml
+
+# Maven/Ant
+target/
