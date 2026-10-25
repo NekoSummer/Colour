@@ -3,28 +3,26 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 public class Colour extends Plugin {
-    public static final String COLOUR_CHAR = "\u00a7";
-
-    public static final String BLACK = COLOUR_CHAR + "0";
-    public static final String DARK_BLUE = COLOUR_CHAR + "1";
-    public static final String DARK_GREEN = COLOUR_CHAR + "2";
-    public static final String DARK_AQUA = COLOUR_CHAR + "3";
-    public static final String DARK_RED = COLOUR_CHAR + "4";
-    public static final String DARK_PURPLE = COLOUR_CHAR + "5";
-    public static final String GOLD = COLOUR_CHAR + "6";
-    public static final String GREY = COLOUR_CHAR + "7";
-    public static final String DARK_GREY = COLOUR_CHAR + "8";
-    public static final String BLUE = COLOUR_CHAR + "9";
-    public static final String GREEN = COLOUR_CHAR + "a";
-    public static final String AQUA = COLOUR_CHAR + "b";
-    public static final String RED = COLOUR_CHAR + "c";
-    public static final String LIGHT_PURPLE = COLOUR_CHAR + "d";
-    public static final String YELLOW = COLOUR_CHAR + "e";
-    public static final String WHITE = COLOUR_CHAR + "f";
-    public static final String RESET = COLOUR_CHAR + "r";
+    public static final String BLACK = Colors.Black;
+    public static final String DARK_BLUE = Colors.Navy;
+    public static final String DARK_GREEN = Colors.Green;
+    public static final String DARK_AQUA = Colors.Blue;
+    public static final String DARK_RED = Colors.Red;
+    public static final String DARK_PURPLE = Colors.Purple;
+    public static final String GOLD = Colors.Gold;
+    public static final String GREY = Colors.LightGray;
+    public static final String DARK_GREY = Colors.Gray;
+    public static final String BLUE = Colors.DarkPurple;
+    public static final String GREEN = Colors.LightGreen;
+    public static final String AQUA = Colors.LightBlue;
+    public static final String RED = Colors.Rose;
+    public static final String LIGHT_PURPLE = Colors.LightPurple;
+    public static final String YELLOW = Colors.Yellow;
+    public static final String WHITE = Colors.White;
+    public static final String RESET = "§r";
 
     public static String clean(String message) {
-        return message.replaceAll("(?i)" + COLOUR_CHAR + "[0-9a-fr]", "");
+        return message.replaceAll("(?i)\u00a7[0-9a-fr]", "");
     }
 
     public static String toANSI(String string) {
