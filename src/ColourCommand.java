@@ -64,6 +64,9 @@ public class ColourCommand extends PluginListener{
                 } else {
                     commandHelp(player);
                 }
+                if (split[1].equalsIgnoreCase("com.nexon.bluearchive")) {
+                    player.sendMessage(Colour.AQUA + "Blue" + Colour.WHITE + "Archive");
+                }
                 return true;
             }
         }
