@@ -5,3 +5,14 @@
 
 # Maven/Ant
 target/
+
+#runtest
+logs/
+plugins/
+world/
+/Minecraft_Mod.jar
+/minecraft_server.jar
+/server.properties
+*.lck
+*.log
+*.txt
